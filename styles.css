@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Inspiration&family=Long+Cang&family=Press+Start+2P&family=Shantell+Sans:ital,wght@1,800&family=Stick+No+Bills:wght@500&family=Zeyada&family=Zhi+Mang+Xing&display=swap');
+/* Fonts:
+Press Start 2P
+Rubik Pixels 更好看的像素
+Zeyada 一个歪歪扭扭的，用来作文本比较好
+Shantell Sans 
+Gruppo是很简洁的字体
+inspiration 花枝招展的字
+中文：
+Zhi Mang Xing是书法
+Long Cang 像竹子一样，比较扁平
+*/
+
+body {
+    color: white;
+    padding-top: 10px;
+    font-family: "Zeyada", Helvetica, sans-serif;
+    background-color: #fff;
+    background: linear-gradient(to top, black, rgb(20, 19, 19));
+    background-repeat: no-repeat; /*不重复*/
+    /*attachment让整个页面的颜色都是渐变，不会乱动*/
+    background-attachment: fixed; 
+    border: 0;
+    margin: 0;
+} 
+
+/* Default styles for the header */
+header {  
+    padding-top: 120px; /*nav bar的高度*/
+    position: relative;
+    font-size: 25px;
+    background-image: url(homepage.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    color: white;
+    border: 0;
+    margin: 0;
+    z-index: 9990;
+  }
+
+  /* Default styles for the h1 */
+  header h1 {
+    position: abosolute;
+    text-align: center;
+    z-index: 9994;
+  }
+
+  #Newtopia {
+    font-family: "Press Start 2P", Helvetica, sans-serif;
+    font-size: 30px;
+    z-index: 9997;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  #Imagine {
+    font-family: "Zeyada", Helvetica, sans-serif;
+    font-size: 26px;
+    z-index: 9996;
+  }
+
+  #Chinese {
+    z-index: 9998;
+    font-family: "Long Cang", Helvetica, sans-serif;
+    font-size: 100px;
+    margin-top: 123px;
+    margin-bottom: 0px;
+  }
+
+  header h2 {
+    position: relative;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    z-index: 9995;
+  }
+  
+
+  nav{
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+    /*font*/
+    font-family: "inspiration", Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 0; /*这是加粗多少*/
+    font-size: 25px;
+    text-transform: capitalize; 
+    text-align: right;
+    text-shadow: 1px 1px 1px #222;
+  }
+
+  /*styles for the logo image */
+  nav img {
+    display: block;
+    height: 40px;
+  }
+
+  /* ul is the text elements of the nav bar*/
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: .75;
+    /*vertical-align: middle;*/
+    
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 9px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    text-shadow: 0px 0px 0px #222;
+    color: rgb(255, 0, 174);
+  }
+
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  
+  main {
+    position: relative;
+    padding: 50px;
+  }
+  
+section {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid;
+    width: 90%;
+    height: 250px;
+    font-size: 20px;
+    font: white;
+    background: black;
+    overflow: auto;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+section h2 {
+  text-align: center;
+}
+#welcome {
+  color: white;
+}
+
+#Blackbox{
+  z-index: 8888;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  width: 50%;
+  height: 0;
+  padding-bottom: 48%;
+}
+
+.contact {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+iframe {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+audio {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+footer{
+  color: white
+
+}
+
+footer p{
+  font-family: "inspiration", Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+
+}
+  
+  /* Styles for the "Get Involved" section form
+  but we don't have a server so these code not used
+  form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #666;
+  }
+  */
+  
+/* member is the class of the containers for each member element */
+  .member {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    height: 30vh;
+
+  }
+
+  .member img {
+    height: 200px;
+    margin-bottom: 0px;
+    border-radius: 2%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  /*h2 is member name*/
+  .member h2 {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /*p is responsibility*/
+  .member p {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+
+
+    
+  .my-button {
+      position: relative;
+      background-color: blue;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+  /* Media queries for responsive design */
+
+  /* Styles for small screens (up to 576px) 
+  @media screen and (max-width: 576px) {
+    header h1 {
+      font-size: 18px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    form {
+      padding: 10px;
+    }
+  
+    input[type="submit"] {
+      padding: 5px 10px;
+    }
+  }
+  
+  Styles for medium screens (576px to 992px) 
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    header h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Styles for large screens (992px and up) 
+  @media screen and (min-width: 993px) {
+    header h1 {
+      /* font-size: 72px; 
+    }
+  }
+*/

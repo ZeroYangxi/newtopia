@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Members</title>
+
+    <!-- Link to the CSS file, the same with the index.html-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  <!-- Navigation menu -->
+  <nav>
+    <!-- img is a self-closing tag, and source-->
+    <img src="logo.png" alt="Newtopia Logo" height="50">
+    <ul>
+
+      <li><a href="members.html" target=_blank title="Get to know us!">Members</a></li>
+      <li><a href="contact.html" target=_blank title="Leave your ideas or get involved!">Contact us</a></li>
+      <!-- <li><a href="#">About us</a></li> -->
+      <!-- <li><a href="#">Contact us</a></li> -->
+      <!-- a tag is for hyperlink
+      target "_self" is open in the same window
+      target "blank" is open in a new tab
+      title appears when hovering-->
+    </ul>
+  </nav>
+
+<body class="members">
+    <h1>Meet Our Members</h1>
+    <div class="member">
+        <img src="members/Sherry.jpeg" alt="Member1">
+        <h2>Sherry</h2>
+        <p>Scientist. Inventer of APTX4869.</p>     
+    </div>
+
+    <div class="member">
+        <img src="members/Rei.png" alt="Member2">
+        <h2>Rei Furuya</h2>
+        <p>Police.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member3">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member4">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member5">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member6">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member7">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member8">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member9">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+    <div class="member">
+        <img src="members/Ai.png" alt="Member4">
+        <h2>Ai Haibara</h2>
+        <p>Student.</p>
+    </div>
+
+
+    <!-- Email us-->
+    <a href="mailto: yangxiyu@link.cuhk.edu.cn" target=_self title="Email us">
+        Click here to email us!
+    </a>
+
+    <!-- button -->
+    <a href="https://www.nytimes.com/crosswords/game/mini" target=_blank title="Surprise!">
+        <button onclick="doSomething()" type="button" class="my-button" >Feel bored?</button>
+        
+        <!-- This java script function is doing that 
+            when "onclick", implement doSomething fucntion
+            so get the id of "test", and turn it into "Goodbye"-->
+        <p id="test">Hello</p>
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbye"
+            }
+
+        </script>
+
+    </a>
+    <!-- only set height, so width is set proportionally-->
+    <!-- alt is the text read aloud by a screen reader-->
+    <!-- title: hover-->
+    <!-- a tag is when you click on the image you can open a website-->
+    <a href="https://www.google.com/">
+    <img src="members/example.jpeg" height= "300" alt="this is example picture for the photo" title="Your name">
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="new topia">
+    <meta name="author" content="our team">
+    <meta name="keywords" content="put keywords">
+    <title>NewTopia | Home</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <!-- Navigation menu -->
+  <nav>
+    <!-- img is a self-closing tag, and source-->
+    <img src="logo.png" alt="Newtopia Logo" height="50">
+    <ul>
+
+      <li><a href="members.html" target=_blank title="Get to know us!">Members</a></li>
+      <li><a href="contact.html" target=_blank title="Leave your ideas or get involved!">Contact us</a></li>
+      <!-- <li><a href="#">About us</a></li> -->
+      <!-- <li><a href="#">Contact us</a></li> -->
+      <!-- a tag is for hyperlink
+      target "_self" is open in the same window
+      target "blank" is open in a new tab
+      title appears when hovering-->
+    </ul>
+  </nav>
+
+    <!-- Header section -->
+    <header>
+      <h1 id="Chinese">新好地</h1>
+      <h1 id="Newtopia">NewTopia</h1>
+      <h2 id="Imagine">Imagine Otherwise</h2>
+
+      <!-- hr element is the grey line
+      No need of closing tag -->
+      <!-- <hr> -->
+    </header>
+
+  <body>
+    <!-- Main content section -->
+    <main>
+      <!-- Welcome section -->
+      <section id="welcome">
+        <div>
+          <h2>Welcome to NewTopia</h2>
+          <!--不同的字体样式，用css会更好，但是html方便-->
+          <p> <b>NewTopia</b> is a <big>social experimental</big> organization focused on creating a better future for all.</p>
+          <p>This is <i>italic</i> text</p>
+          <p>This is <big>big</big> text</p>
+          <p>This is <small>small</small> text</p>
+          <p>This is <sub>subscript</sub> text</p>
+          <p>This is <ins>inserted</ins> text</p>
+          <p>This is <del>deleted</del> text</p>
+          <p>This is <mark>marked</mark> text</p>
+        </div>
+      </section>
+
+      <!-- Blackbox section -->
+      <section  id="Blackbox">
+        <h2>BlackBox Project</h2>
+        <p>At NewTopia, our mission is to bring people together to create innovative solutions to social problems. We believe that by working together, we can create a world where everyone has access to the resources they need to live a fulfilling life.</p>
+      </section>
+    </main>
+
+        <!-- 放歌的-->
+        <audio controls autoplay muted loop>
+          <source src="Midnight.mp3">
+        <!--这里可以多几个source，用来backup那首播放不了的时候，最好是不同文件格式-->
+          This browser does not suppor HTML5 audio TAT
+        </audio>
+    
+    
+        <!-- 放video, 支持格式: MP4, WebM, and Ogg 
+        <video controls autoplay muted loop width="500">
+          <source src="name.mp4">
+        多几个source的操作和audio一样
+        </video> -->
+
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; 2023 NewTopia. All rights reserved. Made with &#128151.</p>
+    </footer>
+  </body>
+</html>
